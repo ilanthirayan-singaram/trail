@@ -5,6 +5,7 @@ import { CommonService } from '../../common.service';
 import { ServiceService } from '../service.service';
 @Component({
   selector: 'app-changephoneno',
+  standalone: true,
   templateUrl: './changephoneno.component.html',
   styleUrls: ['./changephoneno.component.scss']
 })

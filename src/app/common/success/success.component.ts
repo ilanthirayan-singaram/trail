@@ -6,6 +6,7 @@ import { ServiceService } from 'src/app/vod/service.service';
 
 @Component({
   selector: 'app-success',
+  standalone: true,  
   templateUrl: './success.component.html',
   styleUrls: ['./success.component.scss']
 })

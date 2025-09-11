@@ -7,6 +7,7 @@ import { SubscriptionComponent } from '../subscription/subscription.component';
 
 @Component({
   selector: 'app-flimdoo-subscription',
+  standalone: true,  
   templateUrl: './flimdoo-subscription.component.html',
   styleUrls: ['./flimdoo-subscription.component.scss']
 })

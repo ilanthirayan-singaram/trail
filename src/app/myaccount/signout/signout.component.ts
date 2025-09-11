@@ -7,6 +7,7 @@ import { CommonService } from '../../common.service';
 import { MatDialogRef } from '@angular/material/dialog';
 @Component({
   selector: 'app-signout',
+  standalone: true,
   templateUrl: './signout.component.html',
   styleUrls: ['./signout.component.scss']
 })

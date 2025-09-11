@@ -15,6 +15,7 @@ const getMonth = (idx) => {
 
 @Component({
   selector: 'app-creditdebit',
+  standalone: true,
   templateUrl: './creditdebit.component.html',
   styleUrls: ['./creditdebit.component.scss']
 })

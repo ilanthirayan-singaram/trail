@@ -5,6 +5,7 @@ import { CommonService } from '../../common.service';
 import { ServiceService } from '../service.service';
 @Component({
   selector: 'app-billing',
+  standalone: true,
   templateUrl: './billing.component.html',
   styleUrls: ['./billing.component.scss']
 })

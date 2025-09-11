@@ -7,6 +7,7 @@ import { MatDialogRef } from '@angular/material/dialog';
 import { CheckmailPipe } from '../../checkmail.pipe';
 @Component({
   selector: 'app-changepassword',
+  standalone: true,
   templateUrl: './changepassword.component.html',
   styleUrls: ['./changepassword.component.scss']
 })

@@ -4,6 +4,7 @@ import { CommonService } from "../../common.service";
 
 @Component({
   selector: 'app-forgotpin',
+  standalone: true,  
   templateUrl: './forgotpin.component.html',
   styleUrls: ['./forgotpin.component.scss']
 })

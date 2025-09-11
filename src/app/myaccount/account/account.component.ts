@@ -22,6 +22,7 @@ import { CancellationComponent } from '../cancellation/cancellation.component';
 import { BillingemailComponent } from '../billingemail/billingemail.component';
 @Component({
   selector: 'app-account',
+  standalone: true,
   templateUrl: './account.component.html',
   styleUrls: ['./account.component.scss']
 })

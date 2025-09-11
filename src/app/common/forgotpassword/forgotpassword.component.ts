@@ -5,6 +5,7 @@ import { CommonService } from "../../common.service";
 
 @Component({
   selector: 'app-forgotpassword',
+  standalone: true,  
   templateUrl: './forgotpassword.component.html',
   styleUrls: ['./forgotpassword.component.scss']
 })

@@ -1,6 +1,5 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { CommonModule } from '@angular/common';
 import { CommonsModule } from '../common/common.module';
 import { MyaccountRoutingModule } from './myaccount-routing.module';
 
@@ -51,7 +50,6 @@ import { BillingemailComponent } from './billingemail/billingemail.component';
     TestparticipationComponent, BillingemailComponent
   ],
   imports: [
-    CommonModule,
     FormsModule,
     SwiperModule,
     NgxSpinnerModule,

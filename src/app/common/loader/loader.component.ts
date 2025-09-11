@@ -2,6 +2,7 @@ import { Component, OnInit, ViewEncapsulation, Input, DoCheck } from '@angular/c
 import { CommonService } from '../../common.service';
 @Component({
   selector: 'app-loader',
+  standalone: true,  
   templateUrl: './loader.component.html',
   styleUrls: ['./loader.component.scss'],
    encapsulation: ViewEncapsulation.None

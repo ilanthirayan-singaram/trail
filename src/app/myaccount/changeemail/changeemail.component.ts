@@ -6,6 +6,7 @@ import { ServiceService } from '../service.service';
 // import { ForgotpasswordComponent } from '../../general/forgotpassword/forgotpassword.component';
 @Component({
   selector: 'app-changeemail',
+  standalone: true,
   templateUrl: './changeemail.component.html',
   styleUrls: ['./changeemail.component.scss']
 })

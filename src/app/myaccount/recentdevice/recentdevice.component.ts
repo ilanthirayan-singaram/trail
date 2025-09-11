@@ -4,6 +4,7 @@ import { CommonService } from '../../common.service';
 import { ServiceService } from '../service.service';
 @Component({
   selector: 'app-recentdevice',
+  standalone: true,
   templateUrl: './recentdevice.component.html',
   styleUrls: ['./recentdevice.component.scss']
 })

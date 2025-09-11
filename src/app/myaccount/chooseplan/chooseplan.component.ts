@@ -7,6 +7,7 @@ import { ServiceService } from '../service.service';
 import { Location } from '@angular/common';
 @Component({
   selector: 'app-chooseplan',
+  standalone: true,
   templateUrl: './chooseplan.component.html',
   styleUrls: ['./chooseplan.component.scss']
 })

@@ -4,6 +4,7 @@ import { MatDialogRef } from '@angular/material/dialog';
 import { ServiceService } from '../service.service';
 @Component({
   selector: 'app-requestinfo',
+  standalone: true,
   templateUrl: './requestinfo.component.html',
   styleUrls: ['./requestinfo.component.scss']
 })

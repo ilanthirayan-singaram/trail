@@ -5,6 +5,7 @@ import { CommonService } from '../../common.service';
 import { ServiceService } from '../service.service';
 @Component({
   selector: 'app-cancellation',
+  standalone: true,
   templateUrl: './cancellation.component.html',
   styleUrls: ['./cancellation.component.scss']
 })

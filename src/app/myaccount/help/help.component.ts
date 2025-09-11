@@ -6,6 +6,7 @@ import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-help',
+  standalone: true,
   templateUrl: './help.component.html',
   styleUrls: ['./help.component.scss'],
   encapsulation: ViewEncapsulation.None

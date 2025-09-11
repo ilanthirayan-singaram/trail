@@ -3,6 +3,8 @@ import { MatDialogRef } from '@angular/material/dialog';
 import { CommonService } from '../../common.service';
 @Component({
   selector: 'app-newbillingday',
+  standalone: true,
+  standalone: true,
   templateUrl: './newbillingday.component.html',
   styleUrls: ['./newbillingday.component.scss']
 })

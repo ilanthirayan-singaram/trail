@@ -105,10 +105,10 @@ const routes: Routes = [
 //       path: 'signout', 
 //       component: SignoutComponent 
 //     },
-//   { 
-//       path: 'testparticipation', 
-//       component: TestparticipationComponent 
-//     },
+   { 
+       path: 'testparticipation', 
+       component: TestparticipationComponent 
+     },
 
 ];
 

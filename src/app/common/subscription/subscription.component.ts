@@ -8,6 +8,7 @@ import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-subscription',
+  standalone: true,  
   templateUrl: './subscription.component.html',
   styleUrls: ['./subscription.component.scss']
 })

@@ -5,6 +5,7 @@ import { ServiceService } from '../service.service';
 import { CommonService } from '../../common.service';
 @Component({
   selector: 'app-changeplan',
+  standalone: true,
   templateUrl: './changeplan.component.html',
   styleUrls: ['./changeplan.component.scss']
 })

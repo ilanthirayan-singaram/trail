@@ -4,6 +4,7 @@ import { CommonService } from '../../common.service';
 import { MatDialogRef } from '@angular/material/dialog';
 @Component({
   selector: 'app-avattacard',
+  standalone: true,
   templateUrl: './avattacard.component.html',
   styleUrls: ['./avattacard.component.scss']
 })

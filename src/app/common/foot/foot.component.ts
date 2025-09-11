@@ -3,6 +3,7 @@ import { CommonService } from '../../common.service';
 
 @Component({
   selector: 'app-foot',
+  standalone: true,  
   templateUrl: './foot.component.html',
   styleUrls: ['./foot.component.scss']
 })

@@ -1,6 +1,5 @@
 import { NgModule, NO_ERRORS_SCHEMA, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { CommonModule } from '@angular/common';
 import { CommonsModule } from '../common/common.module'; 
 import { GeneralRoutingModule } from './general-routing.module';
 import { ImageCropperModule } from 'ngx-image-cropper';
@@ -46,7 +45,7 @@ import { PopupComponent } from './popup/popup.component';
     PopupComponent
   ],
   imports: [
-    CommonModule,
+    
     FormsModule,
     NgxSpinnerModule,
     SwiperModule,

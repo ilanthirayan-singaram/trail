@@ -10,6 +10,7 @@ import { MatDialogRef } from '@angular/material/dialog';
 import { CheckmailPipe } from '../../checkmail.pipe';
 @Component({
   selector: 'app-securitycheck',
+  standalone: true,
   templateUrl: './securitycheck.component.html',
   styleUrls: ['./securitycheck.component.scss']
 })

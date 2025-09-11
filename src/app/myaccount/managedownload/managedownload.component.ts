@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import { CommonService } from '../../common.service';
 @Component({
   selector: 'app-managedownload',
+  standalone: true,
   templateUrl: './managedownload.component.html',
   styleUrls: ['./managedownload.component.scss']
 })

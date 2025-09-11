@@ -1,6 +1,5 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { CommonsRoutingModule } from './common-routing.module';
 
@@ -33,7 +32,6 @@ import { FlimdooSubscriptionComponent } from './flimdoo-subscription/flimdoo-sub
     ForgotpinComponent,
   ],
   imports: [
-    CommonModule,
     FormsModule,
     RouterModule,
     CommonsRoutingModule

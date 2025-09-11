@@ -6,6 +6,7 @@ import { ServiceService } from '../service.service';
 
 @Component({
   selector: 'app-billingemail',
+  standalone: true,
   templateUrl: './billingemail.component.html',
   styleUrls: ['./billingemail.component.scss']
 })

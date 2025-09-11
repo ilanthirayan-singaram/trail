@@ -3,6 +3,7 @@ import { CommonService } from '../../common.service';
 
 @Component({
   selector: 'app-virtual-back',
+  standalone: true,  
   templateUrl: './virtual-back.component.html',
   styleUrls: ['./virtual-back.component.scss']
 })

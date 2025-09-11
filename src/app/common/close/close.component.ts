@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-close',
+  standalone: true,  
   templateUrl: './close.component.html',
   styleUrls: ['./close.component.scss']
 })

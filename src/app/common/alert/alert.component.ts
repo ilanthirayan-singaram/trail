@@ -2,6 +2,7 @@ import { Component, OnInit, Input, DoCheck } from '@angular/core';
 
 @Component({
   selector: 'app-alert',
+  standalone: true,
   templateUrl: './alert.component.html',
   styleUrls: ['./alert.component.scss']
 })

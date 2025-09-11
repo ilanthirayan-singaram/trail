@@ -3,6 +3,7 @@ import { CommonService } from '../../common.service';
 
 @Component({
   selector: 'app-back',
+  standalone: true,  
   templateUrl: './back.component.html',
   styleUrls: ['./back.component.scss']
 })

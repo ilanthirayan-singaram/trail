@@ -3,6 +3,7 @@ import { MatDialogRef } from '@angular/material/dialog';
 import { CommonService } from '../../common.service';
 @Component({
   selector: 'app-redeemgift',
+  standalone: true,
   templateUrl: './redeemgift.component.html',
   styleUrls: ['./redeemgift.component.scss']
 })
