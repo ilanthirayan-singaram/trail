@@ -336,7 +336,7 @@
                                         <h3>{{d2.title | uppercase}}</h3>
                                         <ng-container>
                                             <ng-container *ngFor="let d3 of d2.data;  let i = index"  >
-                                                <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="btn">
+                                                <swiper class="carousel" #slickModal="slick-carousel" [config]="btn">
                                                     <div ngxSlickItem class="slide" *ngFor="let d of d3;  let i = index">
                                                 <div [ngClass]="{'active': d2.id == initial && d1.id == t }"  class="container" [style.z-index]="index+1" (click)="selectPayment()">
                                                     <div class="head" [style.background]="d.first_color_code">
@@ -355,7 +355,7 @@
                                                     </div>
                                                 </div>
                                                     </div>
-                                                </ngx-slick-carousel>
+                                                </swiper>
                                             </ng-container>
                                         </ng-container>
                                     </div>

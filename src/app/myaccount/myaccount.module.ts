@@ -25,7 +25,7 @@ import { SignoutComponent } from './signout/signout.component';
 import { TestparticipationComponent } from './testparticipation/testparticipation.component';
 import { FormsModule } from '@angular/forms';
 import { NgxSpinnerModule } from 'ngx-spinner';
-import { SlickCarouselModule } from 'ngx-slick-carousel';
+
 import { BillingemailComponent } from './billingemail/billingemail.component';
 
 @NgModule({
@@ -53,7 +53,7 @@ import { BillingemailComponent } from './billingemail/billingemail.component';
   imports: [
     CommonModule,
     FormsModule,
-    SlickCarouselModule,
+    SwiperModule,
     NgxSpinnerModule,
     RouterModule,
     CommonsModule,

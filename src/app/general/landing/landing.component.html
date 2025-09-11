@@ -8,11 +8,11 @@
       </ngx-spinner> -->
 
   <div class="mobilebanner">
-    <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="banner">
+    <swiper class="carousel" #slickModal="slick-carousel" [config]="banner">
       <div ngxSlickItem class="slide" *ngFor="let data of slidesShow">
         <img src="{{data.banner}}" (click)="subscribe(data)"/>
       </div>
-    </ngx-slick-carousel>
+    </swiper>
   </div>
 
   <div class="modules">
@@ -35,7 +35,7 @@
       <div class="cont">
         <div class="row">
 
-          <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="btn">
+          <swiper class="carousel" #slickModal="slick-carousel" [config]="btn">
             <div ngxSlickItem class="slide" *ngFor="let data of list">
               <div class="btn">
                 <div class="style" (click)="goToNextPage(data.id)">
@@ -48,7 +48,7 @@
                 </div>
               </div>
             </div>
-          </ngx-slick-carousel>
+          </swiper>
 
         </div>
       </div>
