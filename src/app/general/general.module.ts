@@ -15,7 +15,6 @@ import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component';
 import { FormsModule } from '@angular/forms';
 import { NgxSpinnerModule } from 'ngx-spinner';
-import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { ResetpasswordComponent } from './resetpassword/resetpassword.component';
 import { CheckformatPipe } from './checkformat.pipe';
 import { LibraryComponent } from './library/library.component';
@@ -50,7 +49,7 @@ import { PopupComponent } from './popup/popup.component';
     CommonModule,
     FormsModule,
     NgxSpinnerModule,
-    SlickCarouselModule,
+    SwiperModule,
     RouterModule,
     CommonsModule,
     GeneralRoutingModule,
