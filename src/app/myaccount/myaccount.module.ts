@@ -51,7 +51,6 @@ import { BillingemailComponent } from './billingemail/billingemail.component';
   ],
   imports: [
     FormsModule,
-    SwiperModule,
     NgxSpinnerModule,
     RouterModule,
     CommonsModule,

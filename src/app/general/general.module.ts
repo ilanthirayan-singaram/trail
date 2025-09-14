@@ -48,7 +48,6 @@ import { PopupComponent } from './popup/popup.component';
     
     FormsModule,
     NgxSpinnerModule,
-    SwiperModule,
     RouterModule,
     CommonsModule,
     GeneralRoutingModule,

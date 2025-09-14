@@ -11,7 +11,6 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatDialogModule } from '@angular/material/dialog';
 import { FormsModule } from '@angular/forms';
 import { NgxSpinnerModule } from 'ngx-spinner';
-import { SwiperModule } from 'swiper';
 import { ImageCropperModule } from 'ngx-image-cropper';
 
 import { MyaccountModule } from './myaccount/myaccount.module';
@@ -39,7 +38,6 @@ import { HttpinterceptorService } from './httpinterceptor.service';
     MatButtonModule,
     MatDialogModule,
     FormsModule,
-    SwiperModule,
     ImageCropperModule,
     NgxSpinnerModule,
     GeneralModule,
@@ -51,7 +49,6 @@ import { HttpinterceptorService } from './httpinterceptor.service';
   ],
   exports: [
     NgxSpinnerModule, 
-    SwiperModule,
     MyaccountModule,
     GeneralModule,
     ElearnModule,

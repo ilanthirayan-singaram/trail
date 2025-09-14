@@ -7,6 +7,7 @@ import { ChooseplanComponent } from '../../myaccount/chooseplan/chooseplan.compo
 
 @Component({
   selector: 'app-footer',
+  standalone: true,
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.scss']
 })

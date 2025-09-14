@@ -7,7 +7,6 @@ import { KidsRoutingModule } from './kids-routing.module';
 import { KidsMainpageComponent } from './kids-mainpage/kids-mainpage.component';
 import { FormsModule } from '@angular/forms';
 import { NgxSpinnerModule } from 'ngx-spinner';
-import { SwiperModule } from 'swiper';
 import { SelectkidComponent } from './selectkid/selectkid.component';
 import { PlayvideoComponent } from './playvideo/playvideo.component';
 
@@ -20,7 +19,6 @@ import { PlayvideoComponent } from './playvideo/playvideo.component';
     FormsModule,
     LazyLoadImageModule,
     NgxSpinnerModule,
-    SwiperModule,
     CommonsModule,
     KidsRoutingModule
   ]

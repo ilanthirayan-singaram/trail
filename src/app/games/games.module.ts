@@ -8,7 +8,6 @@ import { GameMainpageComponent } from './game-mainpage/game-mainpage.component';
 import { SelectgameComponent } from './selectgame/selectgame.component';
 import { FormsModule } from '@angular/forms';
 import { NgxSpinnerModule } from 'ngx-spinner';
-import { SwiperModule } from 'swiper';
 import { PlaygameComponent } from './playgame/playgame.component';
 
 @NgModule({
@@ -21,7 +20,6 @@ import { PlaygameComponent } from './playgame/playgame.component';
     CommonModule,
     FormsModule,
     NgxSpinnerModule,
-    SwiperModule,
     RouterModule,
     CommonsModule,
     GamesRoutingModule,

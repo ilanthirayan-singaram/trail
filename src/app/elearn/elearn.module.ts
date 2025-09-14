@@ -8,7 +8,6 @@ import { ElearnMainpageComponent } from './elearn-mainpage/elearn-mainpage.compo
 import { SelectelearnComponent } from './selectelearn/selectelearn.component';
 import { FormsModule } from '@angular/forms';
 import { NgxSpinnerModule } from 'ngx-spinner';
-import { SwiperModule } from 'swiper';
 import { SiyavulaComponent } from './siyavula/siyavula.component';
 import { DetailsComponent } from './details/details.component';
 import { StudytothriveComponent } from './selectelearn/studytothrive/studytothrive.component';
@@ -29,7 +28,6 @@ import { StudychampComponent } from './selectelearn/studychamp/studychamp.compon
     FormsModule,
     NgxSpinnerModule,
     LazyLoadImageModule,
-    SwiperModule,
     RouterModule,
     CommonsModule,
     ElearnRoutingModule

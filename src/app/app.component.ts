@@ -3,25 +3,33 @@ import { Router, NavigationEnd } from '@angular/router';
 import { filter } from 'rxjs/operators';
 import { CommonService } from './common.service';
 import { GoogleanalyticsserviceService } from './googleanalyticsservice.service';
-import { environment } from 'src/environments/environment';
+import { environment } from '../environments/environment';
 import { Subject, timer, } from 'rxjs';
 import { map, switchMap, take, tap, takeUntil } from 'rxjs/operators';
 import { ConsoleToggleServiceService } from './console-toggle-service.service';
+import { RouterOutlet } from '@angular/router';
+import { SHARED_IMPORTS } from './shared';
 const has = Object.prototype.hasOwnProperty;
 declare let ga: Function;
 declare let gtag: Function;
+
 @Component({
   selector: 'app-root',
+  standalone: true, 
+  imports: [
+    RouterOutlet,
+    ...SHARED_IMPORTS
+  ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit, OnDestroy {
   private destroy$ = new Subject<void>();
-  public text: String;
-  emailphone = [];
+  public text: String = '';
+  public emailphone: any[] = []; 
   title = 'avvatta';
-  previousUrl: string = null;
-  currentUrl: string = null;
+  previousUrl: string = '';
+  currentUrl: string = '';
   constructor(private service : CommonService, private router : Router,private consoleToggleService: ConsoleToggleServiceService,
     private gservice: GoogleanalyticsserviceService) {
       // if (environment.gaTrackingId) {
@@ -47,7 +55,7 @@ export class AppComponent implements OnInit, OnDestroy {
   
   ngOnInit(){
     if(localStorage.getItem('emailPhone') != ''){
-      this.emailphone = JSON.parse(localStorage.getItem('emailPhone'));
+      this.emailphone = JSON.parse(localStorage.getItem('emailPhone') ?? '[]') as string[];
     }
   //   this.router.events.pipe(
   //     filter((event) => event instanceof NavigationEnd)
@@ -80,8 +88,8 @@ export class AppComponent implements OnInit, OnDestroy {
   if(!(localStorage.getItem("log") === null)){
     let checkData;
     checkData = [{
-      user_id: JSON.parse(localStorage.getItem('id')),
-      token : localStorage.getItem('token')
+      user_id: JSON.parse(localStorage.getItem('id') ?? '[]' ) as string[]  ,
+      token : localStorage.getItem('token') as string
     }];
     this.service.checkSignOutAll(checkData[0]).subscribe(data =>{
       let changePassword;

@@ -9,8 +9,6 @@ import { ShowComponent } from './show/show.component';
 import { FilmdoComponent } from './filmdo/filmdo.component';
 import { ErosnowComponent } from './erosnow/erosnow.component';
 import { FormsModule } from '@angular/forms';
-import { NgxSpinnerModule } from 'ngx-spinner';
-import { SwiperModule } from 'swiper';
 import { VodRoutingModule } from './vod-routing.module';
 import { VodMainpageComponent } from './vod-mainpage/vod-mainpage.component';
 import { MoviedescriptionComponent } from './moviedescription/moviedescription.component';
@@ -22,26 +20,33 @@ import { MusicplayComponent } from './musicplay/musicplay.component';
 import { NO_ERRORS_SCHEMA, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { SeriesdescriptionComponent } from './seriesdescription/seriesdescription.component';
 import { FilmdoodescriptionComponent } from './filmdoodescription/filmdoodescription.component';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
-@NgModule({
-  declarations: [
+
+  imports: [
+    CommonModule,
+    FormsModule,
+    RouterModule,
+    CommonsModule,
+    VodRoutingModule,
+    LazyLoadImageModule,
     MoviesComponent, 
     SeriesComponent, 
     ShowComponent, 
     FilmdoComponent, 
-    ErosnowComponent, 
-    VodMainpageComponent, MoviedescriptionComponent, MovieComponent, MusicComponent, 
-    MainpageComponent, VideoComponent, MusicplayComponent, SeriesdescriptionComponent, FilmdoodescriptionComponent
-  ],
-  imports: [
-    CommonModule,
-    FormsModule,
-    NgxSpinnerModule,
-    SwiperModule,
-    RouterModule,
-    CommonsModule,
-    VodRoutingModule,
-    LazyLoadImageModule
+    ErosnowComponent,
+    VodMainpageComponent, 
+    MoviedescriptionComponent, 
+    MovieComponent, 
+    MusicComponent, 
+    MainpageComponent, 
+    VideoComponent, 
+    MusicplayComponent,
+    SeriesdescriptionComponent, 
+    FilmdoodescriptionComponent,
+
+
+
   ],
   schemas: [ NO_ERRORS_SCHEMA, CUSTOM_ELEMENTS_SCHEMA ],
   // providers: [{provide: LAZYLOAD_IMAGE_HOOKS, useClass: ScrollHooks}]

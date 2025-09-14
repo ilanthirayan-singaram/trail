@@ -2,5 +2,8 @@ import { bootstrapApplication } from '@angular/platform-browser';
 import { appConfig } from './app/app.config';
 import { App } from './app/app';
 
-bootstrapApplication(App, appConfig)
+import { register } from 'swiper/element/bundle';
+register();   // This registers <swiper-container>, <swiper-slide>, etc.
+
+bootstrapApplication(App, appConfig) 
   .catch((err) => console.error(err));

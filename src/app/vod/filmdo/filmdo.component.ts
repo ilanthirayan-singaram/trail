@@ -6,6 +6,7 @@ import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-filmdo',
+  standalone: true, 
   templateUrl: './filmdo.component.html',
   styleUrls: ['./filmdo.component.scss'],
 })
