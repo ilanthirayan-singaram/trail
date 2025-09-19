@@ -10,6 +10,7 @@ import { NgxSpinnerService } from "ngx-spinner";
 import { VideopopupComponent } from '../videopopup/videopopup.component';
 import { CommonService } from '../../common.service';
 import { ServiceService } from '../service.service';
+import { SHARED_IMPORTS } from '../../shared/imports';
 const left = [
   query(':enter, :leave', style({ position: 'fixed', width: '100%' }), { optional: true }),
   group([
@@ -36,6 +37,8 @@ const right = [
 
 @Component({
   selector: 'app-library',
+  standalone: true,
+  imports: [...SHARED_IMPORTS], 
   templateUrl: './library.component.html',
   styleUrls: ['./library.component.scss']
 })

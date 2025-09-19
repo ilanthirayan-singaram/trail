@@ -2,21 +2,19 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "outDir": "./out-tsc/app",
-    "types": ["swiper"],
-    "strict": true,
-    "noImplicitAny": false
+    "types": ["swiper"]
   },
   "angularCompilerOptions": {
-    "strictTemplates": true,
-    "schemas": ["CUSTOM_ELEMENTS_SCHEMA"]
+    "strictTemplates": true
   },
-
   "files": [
-    "src/main.ts",
-    "src/polyfills.ts"
+    "src/main.ts"
   ],
   "include": [
     "src/**/*.d.ts",
     "src/**/*.ts"
+  ],
+  "exclude": [
+    "src/**/*.spec.ts"
   ]
 }

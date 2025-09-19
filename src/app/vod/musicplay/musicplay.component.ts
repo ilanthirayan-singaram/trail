@@ -3,8 +3,12 @@ import { ServiceService } from './../service.service';
 import { CommonService } from '../../common.service';
 import { Router } from '@angular/router';
 
+import { SHARED_IMPORTS } from '../../shared/imports'; 
+
 @Component({
   selector: 'app-musicplay',
+  standalone: true,
+  imports: [...SHARED_IMPORTS], 
   templateUrl: './musicplay.component.html',
   styleUrls: ['./musicplay.component.scss']
 })

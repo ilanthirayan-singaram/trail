@@ -8,10 +8,12 @@ import { CommonService } from '../../common.service';
 import { ServiceService } from '../service.service';
 import { DeviceDetectorService } from 'ngx-device-detector';
 import { GoogleanalyticsserviceService } from '../../googleanalyticsservice.service';
-
+import { SHARED_IMPORTS } from '../../shared/imports';
 declare const window: any;
 @Component({
   selector: 'app-landing',
+  standalone: true,
+  imports: [...SHARED_IMPORTS], 
   templateUrl: './landing.component.html',
   styleUrls: ['./landing.component.scss'],
   encapsulation: ViewEncapsulation.None

@@ -9,6 +9,9 @@ import { map, switchMap, take, tap, takeUntil } from 'rxjs/operators';
 import { ConsoleToggleServiceService } from './console-toggle-service.service';
 import { RouterOutlet } from '@angular/router';
 import { SHARED_IMPORTS } from './shared';
+import { SwiperModule } from 'ngx-swiper-wrapper';
+
+
 const has = Object.prototype.hasOwnProperty;
 declare let ga: Function;
 declare let gtag: Function;

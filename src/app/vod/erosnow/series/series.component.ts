@@ -9,8 +9,12 @@ import { HostListener } from "@angular/core";
 import { VideopopupComponent } from '../../../general/videopopup/videopopup.component';
 import { environment } from '../../../../environments/environment';
 
+import { SHARED_IMPORTS } from '../../shared/imports'; 
+
 @Component({
   selector: 'app-series',
+  standalone: true,
+  imports: [...SHARED_IMPORTS], 
   templateUrl: './series.component.html',
   styleUrls: ['./series.component.scss']
 })

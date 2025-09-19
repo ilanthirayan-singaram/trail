@@ -8,8 +8,12 @@ import { ModalComponent } from '../../general/modal/modal.component';
 import { HostListener } from "@angular/core";
 import { VideopopupComponent } from '../../general/videopopup/videopopup.component';
 
+import { SHARED_IMPORTS } from '../../shared/imports'; 
+
 @Component({
   selector: 'app-show',
+  standalone: true,
+  imports: [...SHARED_IMPORTS], 
   templateUrl: './show.component.html',
   styleUrls: ['./show.component.scss']
 })

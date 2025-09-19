@@ -8,8 +8,12 @@ import { CommonService } from '../../common.service';
 import { HostListener } from "@angular/core";
 import { VideopopupComponent } from '../../general/videopopup/videopopup.component';
 
+import { SHARED_IMPORTS } from '../../shared/imports'; 
+
 @Component({
   selector: 'app-movies',
+  standalone: true,
+  imports: [...SHARED_IMPORTS], 
   templateUrl: './movies.component.html',
   styleUrls: ['./movies.component.scss']
 })

@@ -1,7 +1,7 @@
 import { Component, OnInit, HostListener, ViewEncapsulation } from '@angular/core';
 import { trigger, transition, query, style, animate, group } from '@angular/animations';
 import { CommonService } from '../../common.service';
-
+import { SHARED_IMPORTS } from '../../shared/imports'; 
 const left = [
 	query(':enter, :leave', style({ position: 'fixed', width: '100%' }), { optional: true }),
 	group([
@@ -28,6 +28,8 @@ const left = [
   
 @Component({
   selector: 'app-about',
+  standalone: true,
+  imports: [...SHARED_IMPORTS], 
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.scss'],
   animations: [

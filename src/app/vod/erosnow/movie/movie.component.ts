@@ -4,9 +4,13 @@ import { ServiceService } from '../../service.service';
 import { CommonService } from '../../../common.service';
 import { environment } from '../../../../environments/environment';
 
+import { SHARED_IMPORTS } from '../../shared/imports'; 
+
 
 @Component({
   selector: 'app-movie',
+  standalone: true,
+  imports: [...SHARED_IMPORTS], 
   templateUrl: './movie.component.html',
   styleUrls: ['./movie.component.scss']
 })

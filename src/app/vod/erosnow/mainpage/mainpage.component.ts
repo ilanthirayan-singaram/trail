@@ -4,8 +4,12 @@ import { ServiceService } from '../../service.service';
 import { CommonService } from '../../../common.service';
 import { environment } from '../../../../environments/environment';
 
+import { SHARED_IMPORTS } from '../../shared/imports'; 
+
 @Component({
   selector: 'app-mainpage',
+  standalone: true,
+  imports: [...SHARED_IMPORTS], 
   templateUrl: './mainpage.component.html',
   styleUrls: ['./mainpage.component.scss']
 })

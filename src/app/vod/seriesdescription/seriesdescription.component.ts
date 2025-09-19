@@ -5,8 +5,12 @@ import { MatDialog } from '@angular/material/dialog';
 import { CommonService } from '../../common.service';
 import { HostListener } from "@angular/core";
 
+import { SHARED_IMPORTS } from '../../shared/imports'; 
+
 @Component({
   selector: 'app-seriesdescription',
+  standalone: true,
+  imports: [...SHARED_IMPORTS], 
   templateUrl: './seriesdescription.component.html',
   styleUrls: ['./seriesdescription.component.scss']
 })

@@ -8,8 +8,12 @@ import { ServiceService } from '../service.service';
 import { CommonService } from '../../common.service';
 import { environment } from '../../../environments/environment';
 
+import { SHARED_IMPORTS } from '../../shared/imports'; 
+
 @Component({
   selector: 'app-vod-mainpage',
+  standalone: true,
+  imports: [...SHARED_IMPORTS], 
   templateUrl: './vod-mainpage.component.html',
   styleUrls: ['./vod-mainpage.component.scss'],
   // encapsulation:ViewEncapsulation.None
